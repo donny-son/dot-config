@@ -1,0 +1,49 @@
+{
+    "initial_working_directory": "~",
+    "font_size_points": 11,
+    "editor_theme": "Merbivore",
+    "posix_terminal_shell": "bash",
+    "jobs_tab_visibility": "shown",
+    "show_terminal_tab": false,
+    "editor_keybindings": "vim",
+    "python_type": "conda",
+    "python_version": "3.8.8",
+    "python_path": "/opt/anaconda3/envs/reticulate/bin/python",
+    "panes": {
+        "quadrants": [
+            "Source",
+            "Console",
+            "TabSet1",
+            "TabSet2"
+        ],
+        "tabSet1": [
+            "Environment",
+            "Connections",
+            "Build",
+            "Presentation"
+        ],
+        "tabSet2": [
+            "History",
+            "Files",
+            "Plots",
+            "Packages",
+            "Help",
+            "VCS",
+            "Tutorial",
+            "Viewer"
+        ],
+        "hiddenTabSet": [],
+        "console_left_on_top": false,
+        "console_right_on_top": true,
+        "additional_source_columns": 0
+    },
+    "strip_trailing_whitespace": true,
+    "auto_save_on_blur": true,
+    "default_encoding": "UTF-8",
+    "auto_save_on_idle": "commit",
+    "auto_save_idle_ms": 500,
+    "graphics_antialiasing": "gray",
+    "scroll_past_end_of_document": true,
+    "rainbow_parentheses": true,
+    "global_theme": "alternate"
+}
