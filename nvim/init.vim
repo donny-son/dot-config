@@ -25,12 +25,9 @@ set ruler
 set incsearch
 set termguicolors
 set scrolloff=30
-<<<<<<< HEAD
 set colorcolumn=80
-=======
 " set textwidth=80
 " set colorcolumn=80
->>>>>>> 939104b480165ddd42b00f08f16bc9474fac0e27
 set signcolumn=yes
 
 call plug#begin('~/.vim/plugged')
@@ -40,14 +37,15 @@ Plug 'nvim-lua/popup.nvim'
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
-Plug 'junegunn/seoul256.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'ap/vim-css-color'
 Plug 'jiangmiao/auto-pairs'
 Plug 'psliwka/vim-smoothie'
 " Plug 'davidhalter/jedi-vim',
-Plug 'Iron-E/nvim-libmodal'
+" Plug 'Iron-E/nvim-libmodal'
+" Plug 'Iron-E/nvim-typora'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
-Plug 'Iron-E/nvim-typora'
+Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 call plug#end()
 
