@@ -39,6 +39,7 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'ap/vim-css-color'
+Plug 'danilo-augusto/vim-afterglow'
 Plug 'jiangmiao/auto-pairs'
 Plug 'psliwka/vim-smoothie'
 " Plug 'davidhalter/jedi-vim',
@@ -51,9 +52,7 @@ call plug#end()
 
 
 let g:NERDTreeWinSize=20
-" let g:seoul256_background = 233
-" color seoul256
-
+colorscheme afterglow
 
 function! s:check_back_space() abort
   let col = col('.') - 1
