@@ -47,8 +47,16 @@
     "show_invisibles": true,
     "show_indent_guides": true,
     "highlight_r_function_calls": true,
+<<<<<<< HEAD
     "tab_multiline_completion": true,
     "show_diagnostics_other": true,
     "syntax_color_console": true,
     "show_doc_outline_rmd": true
+=======
+    "show_diagnostics_other": true,
+    "visual_markdown_editing_wrap_at_column": 80,
+    "rmd_viewer_type": "pane",
+    "visual_markdown_editing_wrap": "column",
+    "default_latex_program": "XeLaTeX"
+>>>>>>> d8781d448173092ee38db73903f5d415608ee356
 }
