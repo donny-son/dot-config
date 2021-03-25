@@ -1,6 +1,7 @@
 set nocompatible              " required
 filetype off                  " required
 syntax on
+set mouse=a
 set hidden
 set nohlsearch
 set cursorline

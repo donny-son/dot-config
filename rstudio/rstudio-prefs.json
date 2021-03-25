@@ -1,8 +1,8 @@
 {
-    "initial_working_directory": "~",
+    "initial_working_directory": "~/Library/Mobile Documents/com~apple~CloudDocs/ProjectsCloud",
     "font_size_points": 11,
-    "editor_theme": "Merbivore",
-    "posix_terminal_shell": "bash",
+    "editor_theme": "Twilight",
+    "posix_terminal_shell": "zsh",
     "jobs_tab_visibility": "shown",
     "show_terminal_tab": false,
     "editor_keybindings": "vim",
@@ -45,5 +45,14 @@
     "graphics_antialiasing": "gray",
     "scroll_past_end_of_document": true,
     "rainbow_parentheses": true,
-    "global_theme": "alternate"
+    "global_theme": "alternate",
+    "highlight_selected_line": true,
+    "show_invisibles": true,
+    "show_indent_guides": true,
+    "highlight_r_function_calls": true,
+    "show_diagnostics_other": true,
+    "visual_markdown_editing_wrap_at_column": 80,
+    "rmd_viewer_type": "pane",
+    "visual_markdown_editing_wrap": "column",
+    "default_latex_program": "XeLaTeX"
 }
