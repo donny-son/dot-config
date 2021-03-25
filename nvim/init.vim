@@ -43,6 +43,7 @@ Plug 'ap/vim-css-color'
 Plug 'danilo-augusto/vim-afterglow'
 Plug 'jiangmiao/auto-pairs'
 Plug 'psliwka/vim-smoothie'
+Plug 'junegunn/vim-easy-align'
 " Plug 'davidhalter/jedi-vim',
 " Plug 'Iron-E/nvim-libmodal'
 " Plug 'Iron-E/nvim-typora'
@@ -86,7 +87,11 @@ noremap <Leader>v :vertical resize +8<CR>
 noremap <Leader>V :vertical resize -8<CR>
 nnoremap <C-R> :w <CR> :sp <CR> :term python % <CR>
 nnoremap <C-W> :bd!<CR>
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
 
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)
 
 autocmd vimenter * NERDTree
 autocmd BufRead *.lyx set syntax=lyx foldmethod=syntax foldcolumn=3
