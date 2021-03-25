@@ -2,6 +2,7 @@ set nocompatible              " required
 filetype off                  " required
 syntax on
 set hidden
+set noimd
 set nohlsearch
 set cursorline
 set noerrorbells
@@ -48,6 +49,7 @@ Plug 'psliwka/vim-smoothie'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
+Plug 'jalvesaq/Nvim-R', {'branch': 'stable'}
 call plug#end()
 
 
