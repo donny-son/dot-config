@@ -25,6 +25,6 @@ alias finance-junkyung="ssh junkyung@165.132.170.51"
 # File management
 alias icloud="cd /Users/donny/Library/Mobile\ Documents/com\~apple\~CloudDocs"
 alias codecloud="cd /Users/donny/Library/Mobile\ Documents/com\~apple\~CloudDocs/CodeCloud"
-alias projcloud="cd /Users/donny/Library/Mobile\ Documents/com\~apple\~CloudDocs/ProjectCloud"
+alias projcloud="cd /Users/donny/Library/Mobile\ Documents/com\~apple\~CloudDocs/ProjectsCloud"
 alias classcloud="cd /Users/donny/Library/Mobile\ Documents/com\~apple\~CloudDocs/ClassCloud"
 
