@@ -819,7 +819,7 @@
                             },
                             {
                                 "from": {
-                                    "key_code": "e",
+                                    "key_code": "s",
                                     "modifiers": {
                                         "mandatory": [
                                             "right_command",
