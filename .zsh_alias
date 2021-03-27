@@ -1,0 +1,30 @@
+# NEED TO IMPORT IN ~/.zshrc
+# . ~/.config/.zsh_alias
+#
+# configs
+alias zc="nvim ~/.zshrc"
+alias vim="nvim"
+alias vi="nvim"
+alias oldvim="\vim"
+alias nv="nvim"
+alias nim="nvim"
+alias nvc="nvim ~/.config/nvim/init.vim"
+alias nvimPush="git --git-dir=/Users/donny/.config/nvim/.git push"
+alias nvimPull="git --git-dir=/Users/donny/.config/nvim/.git pull"
+
+# python
+alias src="source venv/bin/activate"
+
+# ssh
+alias homeserver="ssh donny@175.209.243.186"
+alias finance-donny="ssh donny@165.132.170.51"
+alias fw_jl_to_8888="ssh -N -f -L localhost:8888:localhost:8080 donny@165.132.170.51"
+alias fw_jh_8889="ssh -N -f -L localhost:8889:localhost:8000 donny@165.132.170.51"
+alias finance-junkyung="ssh junkyung@165.132.170.51"
+
+# File management
+alias icloud="cd /Users/donny/Library/Mobile\ Documents/com\~apple\~CloudDocs"
+alias codecloud="cd /Users/donny/Library/Mobile\ Documents/com\~apple\~CloudDocs/CodeCloud"
+alias projcloud="cd /Users/donny/Library/Mobile\ Documents/com\~apple\~CloudDocs/ProjectCloud"
+alias classcloud="cd /Users/donny/Library/Mobile\ Documents/com\~apple\~CloudDocs/ClassCloud"
+

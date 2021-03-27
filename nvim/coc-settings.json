@@ -10,8 +10,10 @@
     "suggest.preferCompleteThanJumpPlaceholder": true,
     "python.workspaceSymbols.exclusionPatterns": [],
     "python.autoComplete.addBrackets": true,
-    "python.jediEnabled": true,
+    "python.jediEnabled": false,
     "python.linting.pylintEnabled": true,
     "python.linting.pylintArgs": ["--load-plugins", "pylint_django"],
-    "go.enable": true
+    "go.enable": true,
+    "r.lsp.path": "/Library/Frameworks/R.framework/Resources/bin/R",
+    "r.lsp.diagnostics": true
 }

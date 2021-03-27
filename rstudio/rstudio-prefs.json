@@ -1,62 +1,7 @@
 {
-    "initial_working_directory": "~/Library/Mobile Documents/com~apple~CloudDocs/ProjectsCloud",
-    "font_size_points": 11,
-    "editor_theme": "Idle Fingers",
-    "posix_terminal_shell": "zsh",
-    "jobs_tab_visibility": "shown",
-    "show_terminal_tab": false,
-    "editor_keybindings": "vim",
-    "panes": {
-        "quadrants": [
-            "Source",
-            "Console",
-            "TabSet1",
-            "TabSet2"
-        ],
-        "tabSet1": [
-            "Environment",
-            "Connections",
-            "Build",
-            "Presentation"
-        ],
-        "tabSet2": [
-            "History",
-            "Files",
-            "Plots",
-            "Packages",
-            "Help",
-            "VCS",
-            "Tutorial",
-            "Viewer"
-        ],
-        "hiddenTabSet": [],
-        "console_left_on_top": false,
-        "console_right_on_top": true,
-        "additional_source_columns": 0
-    },
-    "strip_trailing_whitespace": true,
-    "auto_save_on_blur": true,
-    "default_encoding": "UTF-8",
-    "auto_save_on_idle": "commit",
-    "auto_save_idle_ms": 500,
-    "graphics_antialiasing": "gray",
-    "scroll_past_end_of_document": true,
-    "rainbow_parentheses": true,
-    "global_theme": "alternate",
-    "highlight_selected_line": true,
-    "show_invisibles": true,
-    "show_indent_guides": true,
-    "highlight_r_function_calls": true,
-<<<<<<< HEAD
-    "tab_multiline_completion": true,
-    "show_diagnostics_other": true,
-    "syntax_color_console": true,
-    "show_doc_outline_rmd": true
-=======
-    "show_diagnostics_other": true,
-    "visual_markdown_editing_wrap_at_column": 80,
-    "rmd_viewer_type": "pane",
-    "visual_markdown_editing_wrap": "column",
-    "default_latex_program": "XeLaTeX"
->>>>>>> d8781d448173092ee38db73903f5d415608ee356
+    "load_workspace": false,
+    "initial_working_directory": "~/Library/Mobile Documents/com~apple~CloudDocs",
+    "graphics_backend": "quartz",
+    "graphics_antialiasing": "subpixel",
+    "posix_terminal_shell": "zsh"
 }

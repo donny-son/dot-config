@@ -87,7 +87,7 @@ noremap <Leader>r :resize +8<CR>
 noremap <Leader>R :resize -8<CR>
 noremap <Leader>v :vertical resize +8<CR>
 noremap <Leader>V :vertical resize -8<CR>
-nnoremap <C-R> :w <CR> :sp <CR> :term python % <CR>
+nnoremap <C-R> :w <CR> :sp <CR> :term python3 % <CR>
 nnoremap <C-W> :bd!<CR>
 " Start interactive EasyAlign in visual mode (e.g. vipga)
 xmap ga <Plug>(EasyAlign)
