@@ -1,6 +1,6 @@
 set nocompatible              " required
 filetype off                  " required
-syntax on
+syntax enable
 set mouse=a
 set hidden
 set noimd
@@ -10,9 +10,13 @@ set noerrorbells
 set ruler
 set incsearch
 set encoding=utf-8
+set conceallevel=0
+set cmdheight=2
+set fileencoding=utf-8
 set smartindent
 set nu
-set clipboard=unnamed
+set clipboard=unnamedplus
+set t_Co=256
 set splitbelow
 set splitright
 set foldmethod=indent
@@ -22,19 +26,19 @@ set softtabstop=4
 set shiftwidth=4
 set expandtab
 set autoindent
+set updatetime=300
+set formatoptions-=cro
 set fileformat=unix
 set ruler
 set incsearch
 set termguicolors
 set scrolloff=30
 set colorcolumn=80
-" set textwidth=80
-" set colorcolumn=80
 set signcolumn=yes
 
 call plug#begin('~/.vim/plugged')
 Plug 'rstacruz/vim-closer'
-Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
+Plug 'scrooloose/nerdtree'
 Plug 'nvim-lua/popup.nvim'
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'nvim-lua/plenary.nvim'
@@ -55,7 +59,7 @@ Plug 'jalvesaq/Nvim-R', {'branch': 'stable'}
 call plug#end()
 
 
-let g:NERDTreeWinSize=20
+let g:NERDTreeWinSize=35
 colorscheme afterglow
 
 function! s:check_back_space() abort
@@ -83,18 +87,24 @@ noremap <Leader>y "*y
 noremap <Leader>p "*p
 noremap <Leader>Y "+y
 noremap <Leader>P "+p
-noremap <Leader>r :resize +8<CR>
-noremap <Leader>R :resize -8<CR>
-noremap <Leader>v :vertical resize +8<CR>
-noremap <Leader>V :vertical resize -8<CR>
+noremap <C-k> :resize +4<CR>
+noremap <C-j> :resize -4<CR>
+noremap <C-h> :vertical resize -4<CR>
+noremap <C-l> :vertical resize +4<CR>
+
+" Python 
+let g:python3_host_prog = expand("/opt/anaconda3/bin/python3")
 nnoremap <C-R> :w <CR> :sp <CR> :term python3 % <CR>
 nnoremap <C-W> :bd!<CR>
+
+" EasyAlign
 " Start interactive EasyAlign in visual mode (e.g. vipga)
 xmap ga <Plug>(EasyAlign)
-
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
 nmap ga <Plug>(EasyAlign)
 
-autocmd vimenter * NERDTree
+" autocmd vimenter * NERDTree
 autocmd BufRead *.lyx set syntax=lyx foldmethod=syntax foldcolumn=3
 autocmd BufRead *.lyx syntax sync fromstart
+
+au! BufWritePost $MYVIMRC source %
