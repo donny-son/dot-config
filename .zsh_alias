@@ -13,8 +13,8 @@ alias oldvim="\vim"
 alias zc="nvim ~/.zshrc"
 alias ss="source ~/.zshrc"
 alias nvc="nvim ~/.config/nvim/init.vim"
-alias nvimPush="git --git-dir=/Users/dongookson/.config/nvim/.git push"
-alias nvimPull="git --git-dir=/Users/dongookson/.config/nvim/.git pull"
+alias nvimPush="git --git-dir=$HOME/.config/nvim/.git push"
+alias nvimPull="git --git-dir=$HOME/.config/nvim/.git pull"
 
 # ranger
 alias ra="ranger"
@@ -30,7 +30,7 @@ alias finance-donny="ssh donny@165.132.170.51"
 # alias finance-junkyung="ssh junkyung@165.132.170.51"
 
 # File management
-alias icloud="cd /Users/dongookson/Library/Mobile\ Documents/com\~apple\~CloudDocs"
-alias codecloud="cd /Users/dongookson/Library/Mobile\ Documents/com\~apple\~CloudDocs/CodeCloud"
-alias projcloud="cd /Users/dongookson/Library/Mobile\ Documents/com\~apple\~CloudDocs/ProjectsCloud"
-alias classcloud="cd /Users/dongookson/Library/Mobile\ Documents/com\~apple\~CloudDocs/ClassCloud"
+alias icloud="cd $HOME/Library/Mobile\ Documents/com\~apple\~CloudDocs"
+alias codecloud="cd $HOME/Library/Mobile\ Documents/com\~apple\~CloudDocs/CodeCloud"
+alias projcloud="cd $HOME/Library/Mobile\ Documents/com\~apple\~CloudDocs/ProjectsCloud"
+alias classcloud="cd $HOME/Library/Mobile\ Documents/com\~apple\~CloudDocs/ClassCloud"
