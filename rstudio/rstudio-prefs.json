@@ -3,5 +3,6 @@
     "initial_working_directory": "~/Library/Mobile Documents/com~apple~CloudDocs",
     "graphics_backend": "quartz",
     "graphics_antialiasing": "subpixel",
-    "posix_terminal_shell": "zsh"
+    "posix_terminal_shell": "zsh",
+    "editor_theme": "Abdal Black Hackers"
 }
