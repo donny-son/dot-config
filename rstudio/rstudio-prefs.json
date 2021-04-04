@@ -4,5 +4,8 @@
     "graphics_backend": "quartz",
     "graphics_antialiasing": "subpixel",
     "posix_terminal_shell": "zsh",
-    "editor_theme": "Abdal Black Hackers"
+    "editor_keybindings": "vim",
+    "editor_theme": "Abdal Black Hackers",
+    "jobs_tab_visibility": "shown",
+    "global_theme": "alternate"
 }

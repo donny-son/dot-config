@@ -1,6 +1,8 @@
 # NEED TO IMPORT IN ~/.zshrc
 # . ~/.config/.zsh_alias
-#
+# ZSHELL
+alias resource="source ~/.zshrc"
+
 # Neovim
 alias nightvim="/usr/local/nightvim/bin/nvim"
 alias vim="nvim"
