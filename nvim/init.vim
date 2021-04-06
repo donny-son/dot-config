@@ -97,6 +97,9 @@ let g:python3_host_prog = expand("/opt/anaconda3/bin/python3")
 nnoremap <C-R> :w <CR> :sp <CR> :term python3 % <CR>
 nnoremap <C-W> :bd!<CR>
 
+" R
+let R_path="/Library/Frameworks/R.framework/Resources/bin"
+
 " EasyAlign
 " Start interactive EasyAlign in visual mode (e.g. vipga)
 xmap ga <Plug>(EasyAlign)
