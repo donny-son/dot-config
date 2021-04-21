@@ -1,9 +1,9 @@
 # EDITOR
 set -U EDITOR nvim
 
-# PATHS
 switch (uname)
 case Darwin
+    # PATHS
     echo This is Mac
     fish_add_path $HOME/bin
     fish_add_path /bin
@@ -18,23 +18,25 @@ case Darwin
     fish_add_path /Library/Developer/CommandLineTools/usr/bin
     fish_add_path /Library/Frameworks/R.framework/Resources/bin
     fish_add_path /Applications/Typora.app/Contents/MacOS
+    # CONDA
+    eval $HOME/anaconda3/bin/conda "shell.fish" "hook" $argv | source
 case Linux
     echo This is Linux
-    fish_add_path $HOME/bin
+    fish_add_path /usr/bin
     fish_add_path /usr/local/bin
     fish_add_path /usr/local/stata
     fish_add_path /usr/local/go/bin
     fish_add_path /usr/local/cuda-11.0/bin
     fish_add_path /usr/local/cuda-11.0/include
-    set --export PYTHONPATH /mnt/nas/core/pycore:${PYTHONPATH}
-    set --export LD_LIBRARY_PATH /usr/local/cuda-11.0/lib64:/usr/local/cuda/extras/CUPTI/:$LD_LIBRARY_PATH
-    set --export CUDA_HOME /usr/local/cuda-11.0
-    set --export CUDA_INC_DIR /usr/local/cuda-11.0/include
+    set -xg PYTHONPATH /mnt/nas/core/pycore $PYTHONPATH
+    set -xg LD_LIBRARY_PATH /usr/local/cuda-11.0/lib64:/usr/local/cuda/extras/CUPTI/ $LD_LIBRARY_PATH
+    set -xg CUDA_HOME /usr/local/cuda-11.0 $CUDA_HOME
+    set -xg CUDA_INC_DIR /usr/local/cuda-11.0/include $CUDA_INC_DIR
+    # CONDA
+    eval /home/jasmin/anaconda3/bin/conda "shell.fish" "hook" $argv | source
 end
 
 
-# CONDA
-eval $HOME/anaconda3/bin/conda "shell.fish" "hook" $argv | source
 
 # ALIAS
 . ~/.config/fish/aliases.fish
@@ -89,5 +91,3 @@ function fish_prompt
   echo -n "🐠  "
   set_color normal
 end
-
-
