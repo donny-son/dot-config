@@ -6,5 +6,8 @@
     "posix_terminal_shell": "zsh",
     "editor_keybindings": "vim",
     "editor_theme": "Material-Theme-Darker",
-    "jobs_tab_visibility": "shown"
+    "jobs_tab_visibility": "shown",
+    "editor_theme": "Abdal Black Hackers",
+    "jobs_tab_visibility": "shown",
+    "global_theme": "alternate"
 }
