@@ -108,3 +108,6 @@ autocmd BufRead *.lyx set syntax=lyx foldmethod=syntax foldcolumn=3
 autocmd BufRead *.lyx syntax sync fromstart
 
 au! BufWritePost $MYVIMRC source %
+
+" OPEN IN VSCODE
+:command! OpenCwdInVSCode exe "silent !code '" . getcwd() . "' --goto '" . expand("%") . ":" . line(".") . ":" . col(".") . "'" | redraw!
