@@ -2,20 +2,25 @@
 set -U EDITOR nvim
 
 # PATHS
-fish_add_path $HOME/bin
-fish_add_path /bin
-fish_add_path /sbin
-fish_add_path /usr/bin
-fish_add_path /usr/sbin
-fish_add_path /usr/local/bin
-fish_add_path /Library/Frameworks/Python.framework/Versions/3.9/bin
-fish_add_path $HOME/anaconda3/condabin
-fish_add_path /opt/homebrew/bin
-fish_add_path /opt/homebrew/sbin
-fish_add_path /Library/Developer/CommandLineTools/usr/bin
-fish_add_path /Library/Frameworks/R.framework/Resources/bin
-fish_add_path /Applications/Typora.app/Contents/MacOS
-
+switch (uname)
+case Darwin
+    echo This is Mac
+    fish_add_path $HOME/bin
+    fish_add_path /bin
+    fish_add_path /sbin
+    fish_add_path /usr/bin
+    fish_add_path /usr/sbin
+    fish_add_path /usr/local/bin
+    fish_add_path /Library/Frameworks/Python.framework/Versions/3.9/bin
+    fish_add_path $HOME/anaconda3/condabin
+    fish_add_path /opt/homebrew/bin
+    fish_add_path /opt/homebrew/sbin
+    fish_add_path /Library/Developer/CommandLineTools/usr/bin
+    fish_add_path /Library/Frameworks/R.framework/Resources/bin
+    fish_add_path /Applications/Typora.app/Contents/MacOS
+case Linux
+    echo This is Linux
+end
 
 
 # CONDA
