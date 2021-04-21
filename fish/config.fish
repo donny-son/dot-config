@@ -28,12 +28,13 @@ case Linux
     fish_add_path /usr/local/go/bin
     fish_add_path /usr/local/cuda-11.0/bin
     fish_add_path /usr/local/cuda-11.0/include
-    set -xg PYTHONPATH /mnt/nas/core/pycore $PYTHONPATH
-    set -xg LD_LIBRARY_PATH /usr/local/cuda-11.0/lib64:/usr/local/cuda/extras/CUPTI/ $LD_LIBRARY_PATH
-    set -xg CUDA_HOME /usr/local/cuda-11.0 $CUDA_HOME
-    set -xg CUDA_INC_DIR /usr/local/cuda-11.0/include $CUDA_INC_DIR
+    set -U PYTHONPATH /mnt/nas/core/pycore $PYTHONPATH
+    set -U LD_LIBRARY_PATH /usr/local/cuda-11.0/lib64:/usr/local/cuda/extras/CUPTI/ $LD_LIBRARY_PATH
+    set -U CUDA_HOME /usr/local/cuda-11.0 $CUDA_HOME
+    set -U CUDA_INC_DIR /usr/local/cuda-11.0/include $CUDA_INC_DIR
     # CONDA
     eval /home/jasmin/anaconda3/bin/conda "shell.fish" "hook" $argv | source
+    source /home/jasmin/anaconda3/etc/fish/conf.d/conda.fish
 end
 
 
