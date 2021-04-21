@@ -20,6 +20,16 @@ case Darwin
     fish_add_path /Applications/Typora.app/Contents/MacOS
 case Linux
     echo This is Linux
+    fish_add_path $HOME/bin
+    fish_add_path /usr/local/bin
+    fish_add_path /usr/local/stata
+    fish_add_path /usr/local/go/bin
+    fish_add_path /usr/local/cuda-11.0/bin
+    fish_add_path /usr/local/cuda-11.0/include
+    set --export PYTHONPATH /mnt/nas/core/pycore:${PYTHONPATH}
+    set --export LD_LIBRARY_PATH /usr/local/cuda-11.0/lib64:/usr/local/cuda/extras/CUPTI/:$LD_LIBRARY_PATH
+    set --export CUDA_HOME /usr/local/cuda-11.0
+    set --export CUDA_INC_DIR /usr/local/cuda-11.0/include
 end
 
 
