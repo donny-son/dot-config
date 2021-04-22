@@ -17,10 +17,9 @@ set -U EDITOR nvim
 # OS and PATHS
 switch (uname)
 case Darwin
-printf (set_color B80)"░░█▀▄▀█ ░█▀▀█ ░█▀▀█\n" 
+printf (set_color A80)"░░█▀▄▀█ ░█▀▀█ ░█▀▀█\n" 
 printf (set_color B80)"░░█░█░█ ░█▄▄█ ░█   \n" 
-printf (set_color B80)"░░█  ░█ ░█ ░█ ░█▄▄█\n"
-
+printf (set_color C80)"░░█  ░█ ░█ ░█ ░█▄▄█\n"
     fish_add_path $HOME/bin
     fish_add_path /bin
     fish_add_path /sbin
