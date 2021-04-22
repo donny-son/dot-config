@@ -13,10 +13,10 @@ end
 # EDITOR
 set -U EDITOR nvim
 
+
+# OS and PATHS
 switch (uname)
 case Darwin
-    # PATHS
-
 printf (set_color B80)"░░█▀▄▀█ ░█▀▀█ ░█▀▀█\n" 
 printf (set_color B80)"░░█░█░█ ░█▄▄█ ░█   \n" 
 printf (set_color B80)"░░█  ░█ ░█ ░█ ░█▄▄█\n"
@@ -34,8 +34,6 @@ printf (set_color B80)"░░█  ░█ ░█ ░█ ░█▄▄█\n"
     fish_add_path /Library/Developer/CommandLineTools/usr/bin
     fish_add_path /Library/Frameworks/R.framework/Resources/bin
     fish_add_path /Applications/Typora.app/Contents/MacOS
-    # CONDA
-    eval $HOME/anaconda3/bin/conda "shell.fish" "hook" $argv | source
 case Linux
     printf (set_color B90)"█▄─▄███▄─▄█▄─▀█▄─▄█▄─██─▄█▄─▀─▄█\n"
     printf (set_color B90)"██─██▀██─███─█▄▀─███─██─███▀─▀██\n"
@@ -55,7 +53,15 @@ case Linux
     source /home/jasmin/anaconda3/etc/fish/conf.d/conda.fish
 end
 
-
+# CONDA
+switch (whoami)(uname)
+case dongooksonDarwin # macbook pro
+    eval /opt/anaconda3/bin/conda "shell.fish" "hook" $argv | source
+    source /opt/anaconda3/etc/fish/conf.d/conda.fish
+case donnyDarwin
+    eval $HOME/anaconda3/bin/conda "shell.fish" "hook" $argv | source
+    source $HOME/anaconda3/etc/fish/conf.d/conda.fish
+end
 
 # ALIAS
 . ~/.config/fish/aliases.fish
@@ -71,7 +77,6 @@ set magenta (set_color magenta)
 set normal (set_color normal)
 set red (set_color red)
 set yellow (set_color yellow)
-
 set __fish_git_prompt_color_branch magenta --bold
 set __fish_git_prompt_color_dirtystate white
 set __fish_git_prompt_color_invalidstate red
@@ -83,16 +88,16 @@ set __fish_git_prompt_color_upstream_behind red
 
 # Icons
 set __fish_git_prompt_char_cleanstate ' 👍 '
-set __fish_git_prompt_char_conflictedstate ' ⚠️  '
-set __fish_git_prompt_char_dirtystate ' 💩  '
-set __fish_git_prompt_char_invalidstate ' 🤮  '
-set __fish_git_prompt_char_stagedstate ' 🚥  '
-set __fish_git_prompt_char_stashstate ' 📦  '
+set __fish_git_prompt_char_conflictedstate ' ⚠️ '
+set __fish_git_prompt_char_dirtystate ' 💩 '
+set __fish_git_prompt_char_invalidstate ' 🤮 '
+set __fish_git_prompt_char_stagedstate ' 🚥 '
+set __fish_git_prompt_char_stashstate ' 📦 '
 set __fish_git_prompt_char_stateseparator ' | '
 set __fish_git_prompt_char_untrackedfiles ' 🔍 '
-set __fish_git_prompt_char_upstream_ahead ' ☝️  '
-set __fish_git_prompt_char_upstream_behind ' 👇  '
-set __fish_git_prompt_char_upstream_diverged ' 🚧  '
+set __fish_git_prompt_char_upstream_ahead ' ☝️ '
+set __fish_git_prompt_char_upstream_behind ' 👇 '
+set __fish_git_prompt_char_upstream_diverged ' 🚧 '
 set __fish_git_prompt_char_upstream_equal ' 💯 ' 
 
 
@@ -103,7 +108,9 @@ function fish_prompt
   printf '%s' (prompt_pwd)
   set_color normal
 
-  printf '%s ' (__fish_git_prompt)
-  echo -n "🐠  "
+  printf '%s\n' (__fish_git_prompt)
+  # echo -n "🐠  "
+  echo -n "><((((º>  "
   set_color normal
 end
+
