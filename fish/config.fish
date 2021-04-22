@@ -1,14 +1,14 @@
 ## PROMPT RELATED
+#
+
 function fish_greeting
-    printf (set_color F90)" ______  _______ _______ \n"
-    printf (set_color F80)"(  __  \\(  ___  |  ____ \\ \n"
-    printf (set_color F70)"| (  \  ) (   ) | (    \/\n"
-    printf (set_color F60)"| |   ) | |   | | (_____ \n"
-    printf (set_color F50)"| |   | | |   | (_____  )\n"
-    printf (set_color F40)"| |   ) | |   | |     ) |\n"
-    printf (set_color F30)"| (__/  ) (___) /\____) |\n"
-    printf (set_color F20)"(______/(_______)_______)\n"
-end 
+    printf (set_color F90)"    ____                         \n"
+    printf (set_color F70)"   / __ \____  ____  ____  __  __\n"
+    printf (set_color F50)"  / / / / __ \/ __ \/ __ \/ / / /\n"
+    printf (set_color F30)" / /_/ / /_/ / / / / / / / /_/ / \n"
+    printf (set_color F10)"/_____/\____/_/ /_/_/ /_/\__, /  \n"
+    printf (set_color F00)"                        /____/   \n"
+end
 
 # EDITOR
 set -U EDITOR nvim
