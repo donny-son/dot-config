@@ -1,6 +1,5 @@
 ## PROMPT RELATED
 #
-
 function fish_greeting
     printf (set_color F90)"    ____                         \n"
     printf (set_color F70)"   / __ \____  ____  ____  __  __\n"

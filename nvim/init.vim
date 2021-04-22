@@ -1,5 +1,5 @@
 set nocompatible              " required
-filetype off                  " required
+filetype plugin indent on     " required
 syntax enable
 set mouse=a
 set hidden
@@ -104,8 +104,6 @@ else
 endif
 nnoremap <C-R> :w <CR> :sp <CR> :term python3 % <CR>
 nnoremap <C-W> :bd!<CR>
-
-
 
 
 " EasyAlign
