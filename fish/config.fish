@@ -1,10 +1,26 @@
+## PROMPT RELATED
+function fish_greeting
+    printf (set_color F90)" ______  _______ _______ \n"
+    printf (set_color F80)"(  __  \\(  ___  |  ____ \\ \n"
+    printf (set_color F70)"| (  \  ) (   ) | (    \/\n"
+    printf (set_color F60)"| |   ) | |   | | (_____ \n"
+    printf (set_color F50)"| |   | | |   | (_____  )\n"
+    printf (set_color F40)"| |   ) | |   | |     ) |\n"
+    printf (set_color F30)"| (__/  ) (___) /\____) |\n"
+    printf (set_color F20)"(______/(_______)_______)\n"
+end 
+
 # EDITOR
 set -U EDITOR nvim
 
 switch (uname)
 case Darwin
     # PATHS
-    echo This is Mac
+
+printf (set_color B80)"░░█▀▄▀█ ░█▀▀█ ░█▀▀█\n" 
+printf (set_color B80)"░░█░█░█ ░█▄▄█ ░█   \n" 
+printf (set_color B80)"░░█  ░█ ░█ ░█ ░█▄▄█\n"
+
     fish_add_path $HOME/bin
     fish_add_path /bin
     fish_add_path /sbin
@@ -21,7 +37,9 @@ case Darwin
     # CONDA
     eval $HOME/anaconda3/bin/conda "shell.fish" "hook" $argv | source
 case Linux
-    echo This is Linux
+    printf (set_color B90)"█▄─▄███▄─▄█▄─▀█▄─▄█▄─██─▄█▄─▀─▄█\n"
+    printf (set_color B90)"██─██▀██─███─█▄▀─███─██─███▀─▀██\n"
+    printf (set_color B90)"▀▄▄▄▄▄▀▄▄▄▀▄▄▄▀▀▄▄▀▀▄▄▄▄▀▀▄▄█▄▄▀\n"
     fish_add_path /usr/bin
     fish_add_path /usr/local/bin
     fish_add_path /usr/local/stata
@@ -41,9 +59,6 @@ end
 
 # ALIAS
 . ~/.config/fish/aliases.fish
-
-# PROMPT RELATED
-set fish_greeting
 
 # Options
 set __fish_git_prompt_show_informative_status
