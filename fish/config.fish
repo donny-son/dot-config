@@ -108,7 +108,6 @@ function fish_prompt
   set_color normal
 
   printf '%s\n' (__fish_git_prompt)
-  # echo -n "🐠  "
   echo -n "><((((º>  "
   set_color normal
 end
