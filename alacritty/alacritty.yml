@@ -14,10 +14,10 @@ window:
 
 font:
   normal:
-    family: JetBrains Mono
+    family: JetBrains Mono, D2Coding ligature
     style: Regular
   bold:
-    family: JetBrains Mono
+    family: JetBrains Mono, D2Coding ligature
     style: Bold
   italic:
     family: JetBrains Mono
@@ -31,11 +31,9 @@ font:
     x: 1
     y: 1
 
-  use_thin_strokes: true
-
 draw_bold_text_with_bright_colors: false
 selection:
-  save_to_clipboard: false
+  save_to_clipboard: true
 
 cursor:
   style:
