@@ -14,10 +14,12 @@ window:
 
 font:
   normal:
-    family: JetBrains Mono, D2Coding ligature
+    family: JetBrains Mono
+    family: D2Coding Ligature
     style: Regular
   bold:
-    family: JetBrains Mono, D2Coding ligature
+    family: JetBrains Mono
+    family: D2Coding Ligature
     style: Bold
   italic:
     family: JetBrains Mono
