@@ -8,3 +8,6 @@ htop/
 configstore/
 karabiner/automatic_backups/
 obsidianDefault/themes
+obsidianDefault/workspace
+*.ttf
+*.ttc

@@ -20,7 +20,7 @@
     "showUnsupportedFiles": true,
     "alwaysUpdateLinks": true,
     "spellcheck": true,
-    "cssTheme": "Obsidian gruvbox",
+    "cssTheme": "Ars Magna",
     "foldHeading": true,
     "showLineNumber": true,
     "hotkeys": {
@@ -75,7 +75,9 @@
             }
         ]
     },
-    "obsidianCss": true,
+    "obsidianCss": false,
     "promptDelete": false,
-    "enabledPlugins": []
+    "enabledPlugins": [],
+    "enabledCssSnippets": [],
+    "theme": "obsidian"
 }
