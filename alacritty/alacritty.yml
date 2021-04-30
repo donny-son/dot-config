@@ -14,24 +14,26 @@ window:
 
 font:
   normal:
-    family: JetBrains Mono
     family: D2Coding Ligature
     style: Regular
   bold:
-    family: JetBrains Mono
     family: D2Coding Ligature
     style: Bold
   italic:
-    family: JetBrains Mono
+    family: D2Coding Ligature
     style: Italic
   bold_italic:
-    family: JetBrains Mono
+    family: D2Coding Ligature
     style: Bold Italic
   size: 14.0
 
+  offset:
+    x: 0
+    y: 0
+
   glyph_offset:
-    x: 1
-    y: 1
+    x: 0
+    y: 0
 
 draw_bold_text_with_bright_colors: false
 selection:
