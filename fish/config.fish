@@ -110,4 +110,3 @@ function fish_prompt
   echo -n "><((((º>  "
   set_color normal
 end
-
