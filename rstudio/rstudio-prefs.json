@@ -7,5 +7,9 @@
     "editor_keybindings": "vim",
     "editor_theme": "Abdal Black Hackers",
     "jobs_tab_visibility": "shown",
-    "global_theme": "alternate"
+    "global_theme": "alternate",
+    "document_author": "2020311198 Dongook Son",
+    "highlight_selected_line": true,
+    "scroll_past_end_of_document": true,
+    "rainbow_parentheses": true
 }
