@@ -11,5 +11,7 @@
     "document_author": "2020311198 Dongook Son",
     "highlight_selected_line": true,
     "scroll_past_end_of_document": true,
-    "rainbow_parentheses": true
+    "rainbow_parentheses": true,
+    "code_completion_characters": 1,
+    "code_completion_delay": 10
 }
