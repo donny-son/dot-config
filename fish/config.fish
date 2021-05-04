@@ -54,12 +54,9 @@ end
 
 # CONDA
 switch (whoami)(uname)
-case dongooksonDarwin # macbook pro
+case dongooksonDarwin 
     eval /opt/anaconda3/bin/conda "shell.fish" "hook" $argv | source
     source /opt/anaconda3/etc/fish/conf.d/conda.fish
-case donnyDarwin
-    eval $HOME/anaconda3/bin/conda "shell.fish" "hook" $argv | source
-    source $HOME/anaconda3/etc/fish/conf.d/conda.fish
 end
 
 # ALIAS
@@ -111,3 +108,9 @@ function fish_prompt
   echo -n "><((((º>  "
   set_color normal
 end
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+eval /Users/dongookson/anaconda3/bin/conda "shell.fish" "hook" $argv | source
+# <<< conda initialize <<<
+

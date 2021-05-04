@@ -1,1 +1,83 @@
-{"pluginEnabledStatus":{"file-explorer":true,"global-search":true,"switcher":true,"graph":true,"backlink":true,"command-palette":true,"markdown-importer":true,"word-count":true,"open-with-default-app":true,"file-recovery":true,"daily-notes":true,"outline":true,"slides":true,"workspaces":true},"vimMode":true,"attachmentFolderPath":"./assets/","showUnsupportedFiles":true,"alwaysUpdateLinks":true,"spellcheck":true,"cssTheme":"Dracula for Obsidian","foldHeading":true,"showLineNumber":true,"hotkeys":{"app:toggle-left-sidebar":[{"modifiers":["Mod"],"key":"L"}],"workspace:split-horizontal":[{"modifiers":["Alt"],"key":"H"}],"workspace:split-vertical":[{"modifiers":["Alt"],"key":"V"}],"workspace:export-pdf":[{"modifiers":["Alt","Mod"],"key":"P"}],"daily-notes":[{"modifiers":["Mod"],"key":"T"}],"open-with-default-app:show":[{"modifiers":["Alt","Ctrl"],"key":"O"}]},"obsidianCss":false,"promptDelete":false,"enabledPlugins":[],"enabledCssSnippets":[],"theme":"moonstone","pdfExportSettings":{"pageSize":"Letter","landscape":false,"margin":"2","downscalePercent":100},"tabSize":2}
+{
+  "pluginEnabledStatus": {
+    "file-explorer": true,
+    "global-search": true,
+    "switcher": true,
+    "graph": true,
+    "backlink": true,
+    "command-palette": true,
+    "markdown-importer": true,
+    "word-count": true,
+    "open-with-default-app": true,
+    "file-recovery": true,
+    "daily-notes": false,
+    "outline": true,
+    "slides": true,
+    "workspaces": true
+  },
+  "vimMode": true,
+  "attachmentFolderPath": "./assets/",
+  "showUnsupportedFiles": true,
+  "alwaysUpdateLinks": true,
+  "spellcheck": true,
+  "cssTheme": "Ars Magna",
+  "foldHeading": true,
+  "showLineNumber": true,
+  "hotkeys": {
+    "app:toggle-left-sidebar": [
+      {
+        "modifiers": [
+          "Mod"
+        ],
+        "key": "L"
+      }
+    ],
+    "workspace:split-horizontal": [
+      {
+        "modifiers": [
+          "Alt"
+        ],
+        "key": "H"
+      }
+    ],
+    "workspace:split-vertical": [
+      {
+        "modifiers": [
+          "Alt"
+        ],
+        "key": "V"
+      }
+    ],
+    "workspace:export-pdf": [
+      {
+        "modifiers": [
+          "Alt",
+          "Mod"
+        ],
+        "key": "P"
+      }
+    ],
+    "daily-notes": [
+      {
+        "modifiers": [
+          "Mod"
+        ],
+        "key": "T"
+      }
+    ],
+    "open-with-default-app:show": [
+      {
+        "modifiers": [
+          "Alt",
+          "Ctrl"
+        ],
+        "key": "O"
+      }
+    ]
+  },
+  "obsidianCss": false,
+  "promptDelete": false,
+  "enabledPlugins": [],
+  "enabledCssSnippets": [],
+  "theme": "obsidian"
+}
