@@ -3,10 +3,14 @@ fish/fish_variables
 expressvpn/
 iterm2/
 .DS_Store
-rstudio/dictionaries/
+rstudio
 htop/
+alacritty
 configstore/
-karabiner/automatic_backups/
-obsidianDefault/workspace
+karabiner
+obsidianDefault
 *.ttf
 *.ttc
+iterm2
+iterm2-profiles
+neofetch
