@@ -2,7 +2,6 @@
 ln -sfn /Volumes/home/configs/coc /Users/$(whoami)/.config/coc
 ln -sfn /Volumes/home/configs/expressvpn /Users/$(whoami)/.config/expressvpn
 ln -sfn /Volumes/home/configs/rstudio /Users/$(whoami)/.config/rstudio
-ln -sfn /Volumes/home/configs/htop /Users/$(whoami)/.config/htop
 ln -sfn /Volumes/home/configs/alacritty /Users/$(whoami)/.config/alacritty
 ln -sfn /Volumes/home/configs/configstore /Users/$(whoami)/.config/configstore
 ln -sfn /Volumes/home/configs/karabiner /Users/$(whoami)/.config/karabiner
