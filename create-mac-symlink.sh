@@ -11,4 +11,3 @@ ln -sfn /Volumes/home/configs/iterm2 /Users/$(whoami)/.config/iterm2
 ln -sfn /Volumes/home/configs/iterm2-profiles /Users/$(whoami)/.config/iterm2-profiles
 ln -sfn /Volumes/home/configs/aliases /Users/$(whoami)/.config/aliases
 ln -sfn /Volumes/home/configs/aliases /Users/$(whoami)/.config/fish/aliases.fish
-ln -sfn /Volumes/home/configs/neofetch /Users/$(whoami)/.config/neofetch
