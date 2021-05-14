@@ -1,1 +1,1 @@
-/Volumes/home/configs/aliases
+/Users/dongookson/mac-configs/aliases
