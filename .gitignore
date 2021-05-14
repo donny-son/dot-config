@@ -1,17 +1,3 @@
-coc/
-fish/fish_variables
-expressvpn/
-iterm2/
 .DS_Store
-rstudio
-htop/
-alacritty
-configstore/
-karabiner
-obsidianDefault
 *.ttf
 *.ttc
-iterm2
-iterm2-profiles
-neofetch
-aliases
