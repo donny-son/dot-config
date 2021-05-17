@@ -25,7 +25,6 @@ printf (set_color C80)"░░█  ░█ ░█ ░█ ░█▄▄█\n"
     fish_add_path /usr/bin
     fish_add_path /usr/sbin
     fish_add_path /usr/local/bin
-    fish_add_path /Library/Frameworks/Python.framework/Versions/3.9/bin
     fish_add_path $HOME/anaconda3/condabin
     fish_add_path /Applications/Julia-1.6.app/Contents/Resources/julia/bin
     fish_add_path /opt/homebrew/bin
@@ -33,6 +32,7 @@ printf (set_color C80)"░░█  ░█ ░█ ░█ ░█▄▄█\n"
     fish_add_path /Library/Developer/CommandLineTools/usr/bin
     fish_add_path /Library/Frameworks/R.framework/Resources/bin
     fish_add_path /Applications/Typora.app/Contents/MacOS
+    fish_add_path /Library/Frameworks/Python.framework/Versions/3.9/bin
 case Linux
     printf (set_color B90)"█▄─▄███▄─▄█▄─▀█▄─▄█▄─██─▄█▄─▀─▄█\n"
     printf (set_color B90)"██─██▀██─███─█▄▀─███─██─███▀─▀██\n"

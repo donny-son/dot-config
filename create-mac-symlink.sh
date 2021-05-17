@@ -10,5 +10,6 @@ ln -sfn /Users/dongookson/mac-configs/iterm2 /Users/dongookson/.config
 ln -sfn /Users/dongookson/mac-configs/iterm2-profiles /Users/dongookson/.config
 ln -sfn /Users/dongookson/mac-configs/aliases /Users/dongookson/.config
 ln -sfn /Users/dongookson/mac-configs/aliases /Users/dongookson/.config/fish/aliases.fish
+ln -sfn /Users/dongookson/mac-configs/zshrc /Users/dongookson/.zshrc
 # if karabiner does not work, go to Sys Pref > Security and allow
 # karabiner elements to have full disk access
