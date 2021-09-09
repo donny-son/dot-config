@@ -1,1 +1,0 @@
-/Users/dongookson/mac-configs/aliases

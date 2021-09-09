@@ -10,7 +10,7 @@
     "suggest.preferCompleteThanJumpPlaceholder": true,
     "python.workspaceSymbols.exclusionPatterns": [],
     "python.autoComplete.addBrackets": true,
-    "python.jediEnabled": false,
+    "python.jediEnabled": true,
     "python.linting.pylintEnabled": true,
     "python.linting.pylintArgs": ["--load-plugins", "pylint_django"],
     "go.enable": true,
