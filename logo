@@ -1,4 +1,4 @@
-#!/bin/usr/env sh
+#!/usr/bin/env sh
 
 _imac="
 ██╗███╗   ███╗ █████╗  ██████╗
@@ -26,4 +26,4 @@ _smc="
 ╚══════╝╚═╝     ╚═╝ ╚═════╝
 "
 
-printf "${_imac}"
+printf "${_mini}"
