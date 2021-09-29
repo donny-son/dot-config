@@ -3,6 +3,10 @@ dst=$HOME/.Rprofile
 echo "Adding default configurations to ${dst}"
 
 cat >> $dst <<EOF
+# set default libpath
+dir.create('~/Rlib', showWarnings=FALSE)
+.libPaths(new='~/Rlib')
+
 # set default repository to cran
 local({r <- getOption("repos")
        r["CRAN"] <- "http://cran.r-project.org"
