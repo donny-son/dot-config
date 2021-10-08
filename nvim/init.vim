@@ -39,9 +39,7 @@ set signcolumn=yes
 call plug#begin('~/.vim/plugged')
 Plug 'rstacruz/vim-closer'
 Plug 'scrooloose/nerdtree'
-Plug 'nvim-lua/popup.nvim'
 Plug 'jistr/vim-nerdtree-tabs'
-Plug 'nvim-lua/plenary.nvim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'ap/vim-css-color'
 Plug 'danilo-augusto/vim-afterglow'
@@ -120,6 +118,9 @@ autocmd BufRead *.lyx set syntax=lyx foldmethod=syntax foldcolumn=3
 autocmd BufRead *.lyx syntax sync fromstart
 
 au! BufWritePost $MYVIMRC source %
+
+" Align GitHub-flavored Markdown tables
+au FileType markdown vmap <Leader><Bslash> :EasyAlign*<Bar><Enter>
 
 " OPEN IN VSCODE
 :command! OpenCwdInVSCode exe "silent !code '" . getcwd() . "' --goto '" . expand("%") . ":" . line(".") . ":" . col(".") . "'" | redraw!
