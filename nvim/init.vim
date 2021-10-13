@@ -39,19 +39,13 @@ set signcolumn=yes
 call plug#begin('~/.vim/plugged')
 Plug 'rstacruz/vim-closer'
 Plug 'scrooloose/nerdtree'
-Plug 'nvim-lua/popup.nvim'
 Plug 'jistr/vim-nerdtree-tabs'
-Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'ap/vim-css-color'
 Plug 'danilo-augusto/vim-afterglow'
 Plug 'jiangmiao/auto-pairs'
 Plug 'psliwka/vim-smoothie'
 Plug 'junegunn/vim-easy-align'
-" Plug 'davidhalter/jedi-vim',
-" Plug 'Iron-E/nvim-libmodal'
-" Plug 'Iron-E/nvim-typora'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
@@ -125,6 +119,7 @@ autocmd BufRead *.lyx syntax sync fromstart
 
 au! BufWritePost $MYVIMRC source %
 
+" Align GitHub-flavored Markdown tables
 au FileType markdown vmap <Leader><Bslash> :EasyAlign*<Bar><Enter>
 
 " OPEN IN VSCODE
