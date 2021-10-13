@@ -125,5 +125,7 @@ autocmd BufRead *.lyx syntax sync fromstart
 
 au! BufWritePost $MYVIMRC source %
 
+au FileType markdown vmap <Leader><Bslash> :EasyAlign*<Bar><Enter>
+
 " OPEN IN VSCODE
 :command! OpenCwdInVSCode exe "silent !code '" . getcwd() . "' --goto '" . expand("%") . ":" . line(".") . ":" . col(".") . "'" | redraw!
